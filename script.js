@@ -40,6 +40,7 @@ document.querySelector('.check').addEventListener('click', function() {
 
     //Quando o chute for igual ao número
   } else if (guess === secretNumber) {
+    displayText('Você acertou! 👏');
     displayMessage('🎉 Você acertou o número secreto!');
     displayNumber(secretNumber);
     displayBackground('#60b347');
