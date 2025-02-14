@@ -1,7 +1,7 @@
 'use strict';
 
-let secretNumber = Math.trunc(Math.random() * 20) + 1;
-let score = 5;
+let secretNumber = Math.trunc(Math.random() * 100) + 1;
+let score = 10;
 let highscore = 0;
 
 //Funções para reduzir códigos repetidos
@@ -69,8 +69,8 @@ document.querySelector('.check').addEventListener('click', function() {
 
 //Botão para iniciar um novo jogo
 document.querySelector('.again').addEventListener('click', function () {
-  score = 5;
-  secretNumber = Math.trunc(Math.random() * 20) + 1;
+  score = 10;
+  secretNumber = Math.trunc(Math.random() * 100) + 1;
   displayMessage('Chute um número...');
   displayScore(score);
   displayNumber('?');
